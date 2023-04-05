@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 1</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta property="og:title" content="First Excercise" />
+    <meta property="og:description" content="This is an example of Open Graph and head elements" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="imageUrl" />
+    <meta property="og:url" content="https://mywebsite.com" />
+    <meta proprty="og:article:author" content="Mustafa Hakan Borazan" />
+    <meta proprty="og:article:section" content="Education" />
+</head>
+
+<body>
+
+</body>
+
+</html>
