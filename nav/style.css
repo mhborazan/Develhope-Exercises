@@ -55,7 +55,7 @@ nav {
 }
 
 .hamburger {
-    visibility: hidden;
+    display: none;
 }
 
 .hamburger-icon {
@@ -68,14 +68,14 @@ nav {
 
 @media screen and (max-width:768px) {
     .hamburger {
-        visibility: visible;
+        display: block;
     }
 
     .right-nav {
-        visibility: hidden;
+        display: none;
     }
 
     .left-nav>a {
-        visibility: hidden;
+        display: none;
     }
 }
