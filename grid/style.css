@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    font-size: 30px;
+    line-height: 80px;
+}
+
+#container {
+    background-color: darkgray;
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 3px;
+}
+
+#input {
+    line-height: 0;
+    grid-column: 1 / 5;
+    padding-right: 20px;
+
+}
+
+#input>input {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    text-align: end;
+
+}
+
+.operation {
+    background-color: gray;
+}
+
+#equal {
+    background-color: palevioletred;
+    grid-row: 3/7;
+    grid-column: 4 / 5;
+    vertical-align: center;
+    text-align: center;
+    line-height: 300px;
+}
+
+.number {
+    background-color: lightgray;
+}
