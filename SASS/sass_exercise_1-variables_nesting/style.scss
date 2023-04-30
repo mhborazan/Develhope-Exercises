@@ -1,0 +1,36 @@
+$red : red;
+$blue : blue;
+$green : green;
+
+div {
+    width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: $green;
+        text-decoration: underline;
+        text-decoration-color: $blue;
+        text-decoration-thickness: 1px;
+    }
+
+    section {
+        display: flex;
+
+        article {
+            padding: 10px;
+            border: 1px solid $green;
+            text-align: center;
+            color: $red;
+
+            &:nth-child(2n+1) {
+                color: $blue;
+            }
+        }
+    }
+}

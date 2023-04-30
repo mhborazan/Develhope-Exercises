@@ -1,0 +1,28 @@
+div {
+  width: 1200px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div h1 {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 1px;
+}
+div section {
+  display: flex;
+}
+div section article {
+  padding: 10px;
+  border: 1px solid green;
+  text-align: center;
+  color: red;
+}
+div section article:nth-child(2n+1) {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */
