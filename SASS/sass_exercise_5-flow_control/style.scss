@@ -1,0 +1,126 @@
+@use "functions.scss" as f;
+
+
+@mixin article($p1, $p2, $p3) {
+    color: $p1;
+    border-color: $p2;
+    font-size: $p3;
+}
+
+
+
+
+div {
+    width: f.rem(1200);
+    margin: f.rem(20);
+    padding: f.rem(20);
+    border: f.rem(1) solid f.$red;
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(10);
+    justify-content: center;
+    align-items: center;
+
+    .h {
+        color: f.$green;
+        text-decoration: underline;
+        text-decoration-color: f.$blue;
+        text-decoration-thickness: f.rem(1);
+    }
+
+    h1 {
+        @extend .h;
+    }
+
+    h2 {
+        @extend .h;
+        padding: f.rem(16);
+        border: f.rem(1) solid f.$red;
+    }
+
+}
+
+section {
+
+
+    article {
+        padding: f.rem(10);
+        text-align: center;
+        border: f.rem(1) solid;
+    }
+
+    &:nth-child(3) {
+        display: flex;
+
+        article:nth-child(odd) {
+            @include article(f.$blue, f.$green, f.rem(16))
+        }
+
+        article:nth-child(even) {
+            @include article(f.$red, f.$green, f.rem(16))
+        }
+    }
+
+    &:nth-child(4) {
+        display: flex;
+
+        @for $index from 1 to 20 {
+            div:nth-child(#{$index}) {
+                background-color: darken(#fff, calc(5% * $index));
+
+                @if $index ==10 {
+                    background-color: f.$blue;
+                    color: f.$red;
+                }
+
+                @if $index >10 {
+                    color: #fff;
+                }
+
+            }
+        }
+
+    }
+
+
+    &:nth-child(5) {
+        width: 100%;
+
+        article {
+            @include article(f.$green, f.$blue, f.rem(22.4))
+        }
+
+    }
+}
+
+
+@mixin fs {
+    padding: 0;
+    width: f.rem(45);
+    height: f.rem(45);
+    margin-left: 0;
+    margin-right: f.rem(15)
+}
+
+@for $index from 1 to 4 {
+
+    .fs-#{$index}rem {
+        @include fs;
+        font-size: $index + rem;
+
+        @if $index ==1 {
+            align-items: flex-start;
+            justify-content: start;
+        }
+
+        @else if $index ==2 {
+            align-items: flex-start;
+            justify-content: start;
+        }
+
+        @else if $index ==3 {
+            align-items: flex-start;
+            justify-content: baseline;
+        }
+    }
+}
