@@ -1,0 +1,48 @@
+div {
+  width: 75rem;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  border: 0.0625rem solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  justify-content: center;
+  align-items: center;
+}
+div .h, div h2, div h1 {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 0.0625rem;
+}
+div h2 {
+  padding: 1rem;
+  border: 0.0625rem solid red;
+}
+
+section article {
+  padding: 0.625rem;
+  text-align: center;
+  border: 0.0625rem solid;
+}
+section:nth-child(3) {
+  display: flex;
+}
+section:nth-child(3) article:nth-child(odd) {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+}
+section:nth-child(3) article:nth-child(even) {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+section:nth-child(4) {
+  width: 100%;
+}
+section:nth-child(4) article {
+  color: green;
+  border-color: blue;
+  font-size: 1.4rem;
+}/*# sourceMappingURL=style.css.map */

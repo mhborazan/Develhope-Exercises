@@ -1,0 +1,7 @@
+$red : red;
+$blue : blue;
+$green : green;
+
+@function rem($val) {
+    @return $val/16+rem
+}

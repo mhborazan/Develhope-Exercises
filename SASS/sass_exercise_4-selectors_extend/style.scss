@@ -1,0 +1,69 @@
+@use "functions.scss" as f;
+
+@mixin article($p1, $p2, $p3) {
+    color: $p1;
+    border-color: $p2;
+    font-size: $p3;
+}
+
+
+div {
+    width: f.rem(1200);
+    margin: f.rem(20);
+    padding: f.rem(20);
+    border: f.rem(1) solid f.$red;
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(10);
+    justify-content: center;
+    align-items: center;
+
+    .h {
+        color: f.$green;
+        text-decoration: underline;
+        text-decoration-color: f.$blue;
+        text-decoration-thickness: f.rem(1);
+    }
+
+    h1 {
+        @extend .h;
+    }
+
+    h2 {
+        @extend .h;
+        padding: f.rem(16);
+        border: f.rem(1) solid f.$red;
+    }
+
+}
+
+section {
+
+
+    article {
+        padding: f.rem(10);
+        text-align: center;
+        border: f.rem(1) solid;
+    }
+
+    &:nth-child(3) {
+        display: flex;
+
+        article:nth-child(odd) {
+            @include article(f.$blue, f.$green, f.rem(16))
+        }
+
+        article:nth-child(even) {
+            @include article(f.$red, f.$green, f.rem(16))
+        }
+    }
+
+    &:nth-child(4) {
+        width: 100%;
+
+        article {
+            @include article(f.$green, f.$blue, f.rem(22.4))
+        }
+
+    }
+}
