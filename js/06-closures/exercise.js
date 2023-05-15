@@ -37,3 +37,13 @@ const printName4 = () => {
 };
 
 printName4().inner4();
+
+//----------- Fifth Solution ------------------
+
+const printName5 = () => {
+  const helloName5 = "Hello John 5";
+  const inner5 = () => console.log(helloName5);
+  inner5();
+};
+
+printName5();
