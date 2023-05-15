@@ -27,3 +27,13 @@ const printName3 = () => {
 };
 
 console.log(printName3()());
+
+//--------- Fourth Solution ------------------
+
+const printName4 = () => {
+  const helloName4 = "Hello John 4";
+  const inner4 = () => console.log(helloName4);
+  return { inner4 };
+};
+
+printName4().inner4();
