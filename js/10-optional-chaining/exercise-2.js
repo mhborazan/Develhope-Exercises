@@ -11,3 +11,9 @@ if ("city" in order === false) {
 if (!order.hasOwnProperty("city")) {
   console.log("City is required");
 }
+
+//-----------------------------------------------//
+
+if (!order.customer?.address?.city) {
+  console.log("City is required");
+}
