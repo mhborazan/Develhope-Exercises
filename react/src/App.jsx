@@ -5,12 +5,17 @@ import Hello from './excercises/excercise-1/Hello'
 import Message from './excercises/excercise-1/Message'
 import Welcome from './excercises/excercise-2/Welcome'
 import Welcome2 from './excercises/excercise-3/Welcome2'
+import Welcome3 from './excercises/excercise-4/Welcome3'
 
 function App() {
   
 
   return (
     <>
+
+      <Seperator id="4">
+        <Welcome3 name="Mustafa Hakan" age={29}/>
+      </Seperator>
 
       <Seperator id="3">
         <Welcome2/>
