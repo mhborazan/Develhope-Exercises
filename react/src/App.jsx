@@ -3,6 +3,7 @@ import './App.css'
 import Seperator from './Seperator'
 import Hello from './excercises/excercise-1/Hello'
 import Message from './excercises/excercise-1/Message'
+import Welcome9 from './excercises/excercise-10/Welcome9'
 import Welcome from './excercises/excercise-2/Welcome'
 import Welcome2 from './excercises/excercise-3/Welcome2'
 import Welcome3 from './excercises/excercise-4/Welcome3'
@@ -17,12 +18,22 @@ function App() {
 
   return (
     <>
+      <Seperator id="10 (age 45 name John)">
+        <Welcome9 name="John" age={45}/>
+      </Seperator>
+
+      <Seperator id="10 (age 45 name Hakan)">
+        <Welcome9 name="Hakan" age={45}/>
+      </Seperator>
+
       <Seperator id="9 (age 75)">
         <Welcome8 name="Hakan" age={75}/>
       </Seperator>
+
       <Seperator id="9 (age 35)">
         <Welcome8 name="Hakan" age={35}/>
       </Seperator>
+
       <Seperator id="9 (age 15)">
         <Welcome8 name="Hakan" age={15}/>
       </Seperator>
