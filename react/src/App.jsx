@@ -9,12 +9,20 @@ import Welcome3 from './excercises/excercise-4/Welcome3'
 import Welcome4 from './excercises/excercise-5/Welcome4'
 import Welcome5 from './excercises/excercise-6/Welcome5'
 import Welcome6 from './excercises/excercise-7/Welcome6'
+import Welcome7 from './excercises/excercise-8/Welcome7'
 
 function App() {
   
 
   return (
     <>
+      <Seperator id="8 (with age prop)">
+        <Welcome7 name="Hakan" age={20}/>
+      </Seperator>
+
+      <Seperator id="8 (no age prop)">
+        <Welcome7 name="Hakan"/>
+      </Seperator>
 
       <Seperator id="7 (below 18)">
         <Welcome6 name="Hakan" age={15}/>
