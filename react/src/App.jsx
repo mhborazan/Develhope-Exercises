@@ -7,6 +7,7 @@ import Welcome9 from './excercises/excercise-10/Welcome9'
 import Welcome10 from './excercises/excercise-11/Welcome10'
 import Counter from './excercises/excercise-12/Counter'
 import Counter2 from './excercises/excercise-13/Counter2'
+import Counter3 from './excercises/excercise-14/Counter3'
 import Welcome from './excercises/excercise-2/Welcome'
 import Welcome2 from './excercises/excercise-3/Welcome2'
 import Welcome3 from './excercises/excercise-4/Welcome3'
@@ -21,7 +22,11 @@ function App() {
 
   return (
     <>
-    <Seperator id="13 inital=10, time=500ms incremet=3">
+      <Seperator id="14 inital=100, time=2000ms incremet=2">
+        <Counter3 initial={100} time={2000} increment={2}/>
+      </Seperator>
+
+      <Seperator id="13 inital=10, time=500ms incremet=3">
         <Counter2 initial={10} time={500} increment={3}/>
       </Seperator>
 
