@@ -5,6 +5,7 @@ import Hello from './excercises/excercise-1/Hello'
 import Message from './excercises/excercise-1/Message'
 import Welcome9 from './excercises/excercise-10/Welcome9'
 import Welcome10 from './excercises/excercise-11/Welcome10'
+import Counter from './excercises/excercise-12/Counter'
 import Welcome from './excercises/excercise-2/Welcome'
 import Welcome2 from './excercises/excercise-3/Welcome2'
 import Welcome3 from './excercises/excercise-4/Welcome3'
@@ -19,6 +20,10 @@ function App() {
 
   return (
     <>
+      <Seperator id="12">
+        <Counter/>
+      </Seperator>
+
       <Seperator id="11 (age 8)">
         <Welcome10 name="John" age={8}/>
       </Seperator>
