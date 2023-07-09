@@ -9,6 +9,7 @@ import Counter from './excercises/excercise-12/Counter'
 import Counter2 from './excercises/excercise-13/Counter2'
 import Counter3 from './excercises/excercise-14/Counter3'
 import Counter4 from './excercises/excercise-15/Counter4'
+import ClickCounter from './excercises/excercise-16/ClickCounter'
 import Welcome from './excercises/excercise-2/Welcome'
 import Welcome2 from './excercises/excercise-3/Welcome2'
 import Welcome3 from './excercises/excercise-4/Welcome3'
@@ -23,6 +24,9 @@ function App() {
 
   return (
     <>
+      <Seperator id="16">
+        <ClickCounter />
+      </Seperator>
 
       <Seperator id="15 inital=25, time=1000ms incremet=1">
         <Counter4 initial={25} time={1000} increment={1}/>
