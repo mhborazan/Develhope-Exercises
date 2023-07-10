@@ -10,6 +10,7 @@ import Counter2 from './excercises/excercise-13/Counter2'
 import Counter3 from './excercises/excercise-14/Counter3'
 import Counter4 from './excercises/excercise-15/Counter4'
 import ClickCounter from './excercises/excercise-16/ClickCounter'
+import ClickTracker from './excercises/excercise-17/ClickTracker'
 import Welcome from './excercises/excercise-2/Welcome'
 import Welcome2 from './excercises/excercise-3/Welcome2'
 import Welcome3 from './excercises/excercise-4/Welcome3'
@@ -24,6 +25,9 @@ function App() {
 
   return (
     <>
+      <Seperator id="17">
+        <ClickTracker/>
+      </Seperator>
       <Seperator id="16">
         <ClickCounter />
       </Seperator>
