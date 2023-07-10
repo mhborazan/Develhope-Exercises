@@ -3,23 +3,7 @@ import React, { useState } from 'react'
 export default function ClickTracker() {
     const [lastButton,setLastButton] = useState(0);
 
-    const clickHandler = (button) => {
-
-        switch (button) {
-            case 1:
-                setLastButton(1);
-                break;
-            case 2:
-                setLastButton(2);
-                break;
-            case 3:
-                setLastButton(3);
-                break;
-        
-            default:
-                break;
-        }
-    }
+    const clickHandler = (button) => setLastButton(button)
 
   return (
     <div>{lastButton==0
