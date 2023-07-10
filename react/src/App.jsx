@@ -12,6 +12,7 @@ import Counter4 from './excercises/excercise-15/Counter4'
 import ClickCounter from './excercises/excercise-16/ClickCounter'
 import ClickTracker from './excercises/excercise-17/ClickTracker'
 import InteractiveComponent from './excercises/excercise-18/InteractiveComponent'
+import Login from '../ignore/excercise-19/Login'
 import Welcome from './excercises/excercise-2/Welcome'
 import Welcome2 from './excercises/excercise-3/Welcome2'
 import Welcome3 from './excercises/excercise-4/Welcome3'
@@ -26,6 +27,9 @@ function App() {
 
   return (
     <>
+    <Seperator id="19">
+        <Login onLogin={()=>{}}/>
+      </Seperator>
       <Seperator id="18">
         <InteractiveComponent/>
       </Seperator>
