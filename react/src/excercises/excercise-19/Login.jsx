@@ -3,19 +3,15 @@ import React, { useState } from 'react'
 export default function Login({onLogin}) {
     const [username,setUsername] = useState("")
     const [password,setPassword] = useState("")
-    const [isButtonDisabled,setIsButtonDiasbled] = useState(true)
-    const handler = () => {
-        if(username != "" && password != "") setIsButtonDiasbled(false)
-    }
   return (
     <div>
         Username:
-        <input name="username" onChange={(v)=>{setUsername(v.target.value);handler()}}/>
+        <input name="username" onChange={(v)=>{setUsername( v.target.value)}}/>
 
         Password:
-        <input name="password" onChange={(v)=>{setPassword(v.target.value);handler()}}/>
+        <input name="password" onChange={(v)=>{setPassword(v.target.value)}}/>
 
-        <button disabled={isButtonDisabled} onClick={()=>onLogin()}>Login</button>
+        <button disabled={!(username.length>0&&password.length>0)} onClick={()=>onLogin(username,password)}>Login</button>
     </div>
   )
 }
