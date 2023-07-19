@@ -21,10 +21,12 @@ export default function TodoList3() {
       <ul>
         {items.map((e, i) => (
           <>
-            <li key={i}>{e}</li>
-            <button key={100 + i} onClick={() => removeTodo(e)}>
-              x
-            </button>
+            <li key={i}>
+              {e}
+              <button key={100 + i} onClick={() => removeTodo(e)}>
+                x
+              </button>
+            </li>
           </>
         ))}
       </ul>
