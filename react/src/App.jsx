@@ -18,6 +18,7 @@ import UncontrolledForm from "./excercises/excercise-21/UncontrolledForm";
 import UncontrolledForm2 from "./excercises/excercise-22/UncontrolledForm2";
 import TodoList from "./excercises/excercise-23/TodoList";
 import TodoList2 from "./excercises/excercise-25/TodoList2";
+import TodoList3 from "./excercises/excercise-26/TodoList3";
 import Welcome2 from "./excercises/excercise-3/Welcome2";
 import Welcome3 from "./excercises/excercise-4/Welcome3";
 import Welcome4 from "./excercises/excercise-5/Welcome4";
@@ -29,6 +30,9 @@ import Welcome8 from "./excercises/excercise-9/Welcome8";
 function App() {
   return (
     <>
+      <Seperator id="26">
+        <TodoList3 />
+      </Seperator>
       <Seperator id="25">
         <TodoList2 />
       </Seperator>
