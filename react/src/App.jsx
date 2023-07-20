@@ -20,6 +20,8 @@ import TodoList from "./excercises/excercise-23/TodoList";
 import TodoList2 from "./excercises/excercise-25/TodoList2";
 import TodoList3 from "./excercises/excercise-26/TodoList3";
 import TodoList4 from "./excercises/excercise-27/TodoList4";
+import DisplayLanguage from "./excercises/excercise-28/DisplayLanguage";
+import { LanguageProvider } from "./excercises/excercise-28/LanguageContextProvider";
 import Welcome2 from "./excercises/excercise-3/Welcome2";
 import Welcome3 from "./excercises/excercise-4/Welcome3";
 import Welcome4 from "./excercises/excercise-5/Welcome4";
@@ -31,6 +33,11 @@ import Welcome8 from "./excercises/excercise-9/Welcome8";
 function App() {
   return (
     <>
+      <Seperator id="28">
+        <LanguageProvider>
+          <DisplayLanguage />
+        </LanguageProvider>
+      </Seperator>
       <Seperator id="27">
         <TodoList4 />
       </Seperator>
