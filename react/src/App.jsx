@@ -37,7 +37,7 @@ import Welcome5 from "./excercises/excercise-6/Welcome5";
 import Welcome6 from "./excercises/excercise-7/Welcome6";
 import Welcome7 from "./excercises/excercise-8/Welcome7";
 import Welcome8 from "./excercises/excercise-9/Welcome8";
-import GithubUser2 from "./excercises/excericse-38/GithubUser2";
+import GithubUser2 from "./excercises/excercise-38/GithubUser2";
 
 function App() {
   return (
