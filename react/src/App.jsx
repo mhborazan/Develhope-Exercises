@@ -27,6 +27,7 @@ import { LanguageProvider2 } from "./excercises/excercise-29/LanguageContextProv
 import Welcome2 from "./excercises/excercise-3/Welcome2";
 import ClickCounterFC from "./excercises/excercise-30/ClickCounterFC";
 import LoginFC from "./excercises/excercise-31/LoginFC";
+import ClickCounterFC2 from "./excercises/excercise-32/ClickCounterFC2";
 import Welcome3 from "./excercises/excercise-4/Welcome3";
 import Welcome4 from "./excercises/excercise-5/Welcome4";
 import Welcome5 from "./excercises/excercise-6/Welcome5";
@@ -37,6 +38,9 @@ import Welcome8 from "./excercises/excercise-9/Welcome8";
 function App() {
   return (
     <>
+      <Seperator id="32">
+        <ClickCounterFC2 onCounterChange={console.log("Counter has changed")} />
+      </Seperator>
       <Seperator id="31">
         <LoginFC />
       </Seperator>
