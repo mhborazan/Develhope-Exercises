@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 
 export default function UncontrolledForm() {
+  const userRef = useRef();
+  const passRef = useRef();
   const formHandler = (e) => {
     e.preventDefault();
-    const username = e.target.elements.username.value;
-    const password = e.target.elements.password.value;
+    const username = userRef.current.value;
+    const password = passRef.current.value;
     console.log(username, password);
   };
   return (
-    <form onSubmit={formHandler}>
+    <form>
       Username:
-      <input name="username" />
+      <input name="username" ref={userRef} />
       Password:
-      <input name="password" />
-      <button type="submit">Submit</button>
+      <input name="password" ref={passRef} />
+      <button type="submit" onClick={formHandler}>
+        Submit
+      </button>
       <button type="reset">Reset</button>
     </form>
   );
