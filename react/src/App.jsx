@@ -30,6 +30,7 @@ import LoginFC from "./excercises/excercise-31/LoginFC";
 import ClickCounterFC2 from "./excercises/excercise-32/ClickCounterFC2";
 import CounterFC from "./excercises/excercise-33/CounterFC";
 import GithubUser from "./excercises/excercise-34/GithubUser";
+import GithubUserList from "./excercises/excercise-35/GithubUserList";
 import Welcome3 from "./excercises/excercise-4/Welcome3";
 import Welcome4 from "./excercises/excercise-5/Welcome4";
 import Welcome5 from "./excercises/excercise-6/Welcome5";
@@ -40,6 +41,9 @@ import Welcome8 from "./excercises/excercise-9/Welcome8";
 function App() {
   return (
     <>
+      <Seperator id="34">
+        <GithubUserList />
+      </Seperator>
       <Seperator id="34">
         <GithubUser username={"mhborazan"} />
       </Seperator>
