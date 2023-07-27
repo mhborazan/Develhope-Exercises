@@ -39,10 +39,20 @@ import Welcome7 from "./excercises/excercise-8/Welcome7";
 import Welcome8 from "./excercises/excercise-9/Welcome8";
 import GithubUser2 from "./excercises/excercise-38/GithubUser2";
 import CarDetails from "./excercises/excercise-40/CarDetails";
+import FilteredList from "./excercises/excercise-43/FilteredList";
 
 function App() {
+  const list = [
+    { name: "Hakan", id: "123456", age: 23 },
+    { name: "Ali", id: "323456", age: 16 },
+    { name: "Carlos", id: "3454221", age: 32 },
+  ];
+
   return (
     <>
+      <Seperator id="43">
+        <FilteredList list={list} />
+      </Seperator>
       <Seperator id="40">
         <CarDetails
           initialData={{ model: "Toyota Corolla", year: 2020, color: "red" }}
