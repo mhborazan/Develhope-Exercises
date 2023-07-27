@@ -38,10 +38,16 @@ import Welcome6 from "./excercises/excercise-7/Welcome6";
 import Welcome7 from "./excercises/excercise-8/Welcome7";
 import Welcome8 from "./excercises/excercise-9/Welcome8";
 import GithubUser2 from "./excercises/excercise-38/GithubUser2";
+import CarDetails from "./excercises/excercise-40/CarDetails";
 
 function App() {
   return (
     <>
+      <Seperator id="40">
+        <CarDetails
+          initialData={{ model: "Toyota Corolla", year: 2020, color: "red" }}
+        />
+      </Seperator>
       <Seperator id="38">
         <GithubUser2 username="mhborazan" />
       </Seperator>
@@ -87,9 +93,9 @@ function App() {
       <Seperator id="23-24">
         <TodoList />
       </Seperator>
-      <Seperator id="22">
+      {/* <Seperator id="22">
         <UncontrolledForm2 />
-      </Seperator>
+      </Seperator> */}
       <Seperator id="21">
         <UncontrolledForm />
       </Seperator>
