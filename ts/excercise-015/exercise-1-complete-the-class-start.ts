@@ -7,19 +7,19 @@ class Currency {
     // Hint: Look at the type of values being passed when `new Currency()`
     // is called below.
 
-    #name:string;
-    #code:string;
-    #symbol:string;
+    private name:string;
+    private code:string;
+    private symbol:string;
 
     // Add types to the constructor parameters.
 
     constructor(name:string, code:string, symbol:string) {
-        this.#name = name;
+        this.name = name;
 
         // Store the `code` and `symbol` parameter values in
         // their corresponding class fields.
-        this.#code = code;
-        this.#symbol = symbol;
+        this.code = code;
+        this.symbol = symbol;
 
     }
 
@@ -33,9 +33,9 @@ class Currency {
         // Replace the `null` values below with the appropriate field values.
         // Hint: Access field values with: this.fieldName
 
-        let description = `The ${this.#name} currency `;
-        description += `has the code ${this.#code} `;
-        description += `and uses the symbol ${this.#symbol}.`;
+        let description = `The ${this.name} currency `;
+        description += `has the code ${this.code} `;
+        description += `and uses the symbol ${this.symbol}.`;
 
         console.log(description);
     }
