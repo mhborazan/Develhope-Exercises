@@ -1,0 +1,7 @@
+If we run the node command without any script to execute or without any arguments, we start a REPL session:
+
+>node
+
+>crypto. + TAB
+
+>crypto.randomInt(10)
