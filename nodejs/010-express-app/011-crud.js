@@ -3,6 +3,15 @@ require("dotenv").config();
 const planets = require("./db.js");
 const app = express();
 const port = process.env.PORT;
+const Joi = require("joi");
+
+const planetSchemaWithId = Joi.object({
+  id: Joi.number().required(),
+  name: Joi.string().min(4).required(),
+});
+const planetSchema = Joi.object({
+  name: Joi.string().min(4).required(),
+});
 
 app.use(express.json());
 
@@ -25,20 +34,22 @@ app.get("/api/planets/:id", (req, res) => {
 });
 
 app.post("/api/planets", (req, res) => {
-  if (req.body.id && req.body.name) {
+  const { error, value } = planetSchemaWithId.validate(req.body);
+  if (!error) {
     planets.push({ id: req.body.id, name: req.body.name });
     res.status(201).json({
       status: 201,
-      //planets: planets,
+      planets: planets,
     });
   } else {
-    res.json({ status: "rejected" });
+    res.json({ error: error });
   }
 });
 
 app.put("/api/planets/:id", (req, res) => {
+  const { error, value } = planetSchema.validate(req.body);
   if (planets.findIndex((e) => e.id === parseInt(req.params.id)) !== -1) {
-    if (req.body.name) {
+    if (!error) {
       planets[planets.findIndex((e) => e.id === parseInt(req.params.id))] = {
         id: parseInt(req.params.id),
         name: req.body.name,
@@ -48,7 +59,7 @@ app.put("/api/planets/:id", (req, res) => {
         planets: planets,
       });
     } else {
-      res.json({ status: "rejected" });
+      res.json({ error: error });
     }
   } else {
     res.json({ status: "id not exist" });
